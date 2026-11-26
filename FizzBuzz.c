@@ -11,16 +11,16 @@ char** fizzBuzz(int n, int* returnSize) {
         answer[i - 1] = malloc(12 * sizeof(char));
 
         if (i % 3 == 0 && i % 5 == 0) {
-            strcpy(answer[i - 1], "FizzBuzz");
+            printf(answer[i - 1], "FizzBuzz");
         }
         else if (i % 3 == 0) {
-            strcpy(answer[i - 1], "Fizz");
+            printf(answer[i - 1], "Fizz");
         }
         else if (i % 5 == 0) {
-            strcpy(answer[i - 1], "Buzz");
+            printf(answer[i - 1], "Buzz");
         }
         else {
-            sprintf(answer[i - 1], "%d", i);
+            printf(answer[i - 1], "%d", i);
         }
     }
 
